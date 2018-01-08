@@ -1,0 +1,881 @@
+* {
+    box-sizing: border-box;
+}
+
+#index,
+#portfolio,
+#udvalgte_vaerker,
+#kiva_paa_overfladen,
+#noahs_uventede_moede,
+#republikken_way,
+#om {
+    max-width: 5200px;
+    margin: auto;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ebe470;
+}
+
+nav {
+    width: 100vw;
+    margin: 0;
+    padding: 5vw 0;
+    position: fixed;
+}
+
+#wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#wrapper .nav_button {
+    flex-basis: auto;
+    flex-grow: 0.25;
+    justify-content: space-between;
+    text-align: center;
+}
+
+a {
+    font-family: Courier, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+
+nav a {}
+
+a:hover {
+    color: burlywood;
+}
+
+p {
+    font-family: HelveticaNeue-Light, sans-serif;
+    font-size: 0.9em;
+}
+
+
+h2 {
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: HelveticaNeue, sans-serif;
+    font-size: 1.5em;
+}
+
+
+/* ------- SPLASH -------- */
+
+section#splash {
+    height: 167vw;
+    width: 100vw;
+}
+
+#overlay {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.4;
+    border-radius: 100%;
+    margin: 45vw 25vw;
+}
+
+#icon260 {
+    position: absolute;
+    width: 25vw;
+    height: auto;
+    /*
+    top: 31vw;
+    left: 38vw;
+    */
+    z-index: 3;
+    margin: 60vw 37.5vw;
+
+}
+
+
+
+
+/* CONTAINER */
+
+#splash_container {
+    position: absolute;
+    margin: 50% 37.5%;
+
+}
+
+
+/* SPRITE */
+
+#splash_sprite {
+    width: 50vw;
+    height: 50vw;
+    background-image: url(splash/splash.png);
+    background-size: 3400% 100%;
+    border-radius: 100%;
+}
+
+.splash_cycle {
+    animation-name: splash_cycle_kf;
+    animation-duration: 3.5s;
+    animation-timing-function: steps(34);
+    animation-iteration-count: infinite;
+}
+
+@keyframes splash_cycle_kf {
+    from {
+        background-position: 0% -100%;
+    }
+    to {
+        background-position: -3400% -100%;
+    }
+}
+
+
+
+/* ------- Mediaquery -------- */
+
+@media screen and (min-width: 375px) and (orientation: portrait) {
+    section#splash {
+        height: 133vw;
+    }
+    section#splash #overlay {
+        margin: 50vw 25vw 50vw 25vw;
+    }
+    section#splash #splash_container {
+        margin: 50vw 25vw 50vw 25vw;
+    }
+
+    section#splash #icon260 {
+        margin: 65vw 37.5vw;
+
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 627px) and (orientation: landscape) {
+    section#splash {
+        height: 59vw;
+    }
+    section#splash #overlay {
+        margin: 20vw 35vw;
+        width: 30vw;
+        height: 30vw;
+    }
+    section#splash #splash_container {
+        margin: 20vw 35vw;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    section#splash #splash_sprite {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    section#splash #icon260 {
+        margin: 30vw 42vw;
+        width: 15vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) and (orientation: landscape) {
+    section#splash {
+        height: 75vw;
+    }
+    section#splash #overlay {
+        margin: 15vw 35vw;
+        width: 30vw;
+        height: 30vw;
+    }
+    section#splash #splash_container {
+        margin: 15vw 35vw;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    section#splash #splash_sprite {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    section#splash #icon260 {
+        margin: 25vw 42vw;
+        width: 15vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) and (orientation: landscape) {
+    section#splash {
+        height: 56vw;
+    }
+    section#splash #overlay {
+        margin: 15vw 35vw;
+        width: 30vw;
+        height: 30vw;
+    }
+    section#splash #splash_container {
+        margin: 15vw 35vw;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    section#splash #splash_sprite {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    section#splash #icon260 {
+        margin: 25vw 43vw;
+        width: 15vw;
+        height: auto;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1025px),
+screen and (min-resolution: 192dpi) and (min-width: 1025px) {
+    section#splash {
+        height: 56vw;
+    }
+    section#splash #overlay {
+        margin: 16vw 35vw;
+        width: 30vw;
+        height: 30vw;
+    }
+    section#splash #splash_container {
+        margin: 16vw 35vw;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    section#splash #splash_sprite {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    section#splash #icon260 {
+        margin: 27vw 43vw;
+        width: 15vw;
+        height: auto;
+    }
+}
+
+
+
+/* --------- OM ---------- */
+
+section#om {
+    width: 100vw;
+    height: 100vw;
+    padding: 10% 20%;
+}
+
+@media screen and (min-width: 375px) and (orientation: portrait) {
+    section#om {
+        height: 133vw;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 627px) and (orientation: landscape) {
+    section#om {
+        height: 59vw;
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) and (orientation: landscape) {
+    section#om {
+        height: 75vw;
+    }
+}
+
+@media screen and (min-width: 1025px) and (orientation: landscape) {
+    section#om {
+        height: 56vw;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1025px),
+screen and (min-resolution: 192dpi) and (min-width: 1025px) {
+    section#om {
+        height: 56vw;
+    }
+}
+
+.sectionwrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.column_top {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.column_left {
+    width: 100%;
+    height: 100%;
+    flex-grow: 0.5;
+    flex-basis: 400px;
+
+
+}
+
+.column_left img {
+    width: auto;
+    height: 100%;
+    float: right;
+}
+
+
+.column_right {
+    flex-grow: 0.5;
+    flex-basis: 400px;
+    padding: 1% 2% 0 15%;
+}
+
+.column_right p {
+    height: 100%;
+    width: 100%;
+}
+
+.column_bottom {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+.column_bottom img {
+    width: 100%;
+    height: auto;
+
+}
+
+.column_content {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* --------- UDVALGTE VÆRKER ---------- */
+
+.projekt_nav {
+    width: 20vw;
+    height: 40vw;
+    z-index: 2;
+    position: absolute;
+
+}
+
+.projekt_nav div {
+    padding: 5vw 0 5vw 2vw;
+    animation-name: projekt_nav_kf;
+    animation-duration: 1.2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes projekt_nav_kf {
+    from {
+        padding: 5vw 0 5vw 0;
+        opacity: 0;
+    }
+    to {
+        padding: 5vw 0 5vw 2vw;
+        opacity: 1;
+    }
+}
+
+.projekt_nav a {
+    font-family: Courier, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    margin: 0 0 0 0;
+}
+
+.projekt_nav div a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+section#udvalgte_vaerker {}
+
+
+#knapper {
+    width: 100vw;
+    height: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10% 20%;
+}
+
+.knap {
+    flex-grow: 0.3;
+    flex-basis: 200px;
+    width: 100%;
+    height: 100%;
+    padding: 0 1%;
+}
+
+
+.knap img {
+    height: 100%;
+    width: 100%;
+
+}*/
+
+section#udvalgte_vaerker {
+    width: 100vw;
+    height: 100vw;
+    padding: 10% 20%;
+}
+
+@media screen and (min-width: 375px) and (orientation: portrait) {
+    section#udvalgte_vaerker {
+        height: 133vw;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 627px) and (orientation: landscape) {
+    section#udvalgte_vaerker {
+        height: 59vw;
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) and (orientation: landscape) {
+    section#udvalgte_vaerker {
+        height: 75vw;
+    }
+}
+
+@media screen and (min-width: 1025px) and (orientation: landscape) {
+    section#udvalgte_vaerker {
+        height: 56vw;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1025px),
+screen and (min-resolution: 192dpi) and (min-width: 1025px) {
+    section#udvalgte_vaerker {
+        height: 56vw;
+    }
+}
+
+
+#knapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.knap {
+    flex-grow: 0.3;
+    flex-basis: 200px;
+
+    width: 100%;
+    height: 100%;
+    padding: 5% 5%;
+    overflow: hidden;
+}
+
+
+.knap img {
+    height: 600px;
+    width: 300px;
+}
+
+
+
+/* --------- KIVA PÅ OVERFLADEN ---------- */
+
+/* opgaven */
+
+section#opgaven {}
+
+section#opgaven .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vw;
+}
+
+section#opgaven .content {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 25% 25% 10% 35%;
+    width: 100%;
+    height: 100%;
+
+}
+
+section#opgaven .content p {
+    max-width: 600px;
+}
+
+/* process beskrivelse */
+
+#beskrivelse {
+    width: 100vw;
+    height: 100vw;
+}
+
+section#process #beskrivelse .sectionwrapper {
+    padding-top: 20%;
+    padding-bottom: 10%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#process .column {
+    width: 100%;
+    height: 100%;
+    flex-basis: 500px;
+    flex-grow: 0.5;
+}
+
+section#process .column_content_left {
+    height: 100%;
+    width: 100%;
+}
+
+section#process .top {
+    padding: 5% 2% 4% 30%;
+}
+
+
+section#process .top img {
+    width: 100%;
+}
+
+section#process .bottom {
+    padding: 0 10% 0 40%;
+}
+
+section#process .bottom img {
+    width: 100%;
+
+
+}
+
+section#process .column_content_right {
+    width: 100%;
+}
+
+
+
+section#process .content {
+    padding: 10% 5%;
+    width: 100%;
+}
+
+section#process .content p {
+    max-width: 500px;
+}
+
+section#process .content a {
+    font-family: HelveticaNeue-Light, sans-serif;
+    font-size: 0.9em;
+    color: black;
+}
+
+/* process billeder */
+
+#billeder {
+    width: 100vw;
+    height: 100vw;
+}
+
+section#process #billeder .sectionwrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+/*
+section#process .top {
+    padding: 5% 2% 4% 30%;
+}
+
+
+section#process .top img {
+    width: 100%;
+}
+*/
+
+section#process .row_top {
+    width: 100%;
+    height: 100%;
+    padding: 10% 20% 2% 25%;
+}
+
+section#process .row_top img {
+    width: 100%;
+}
+
+section#process .row_bottom {}
+
+section#process .row_content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+section#process .left {
+    flex-basis: 500px;
+    flex-grow: 0.5;
+    padding: 2% 3% 0 20%;
+    width: 100%;
+    height: 100%;
+}
+
+
+section#process .left img {
+    width: 100%;
+}
+
+
+section#process .right {
+    flex-basis: 500px;
+    flex-grow: 0.5;
+    padding: 0 15% 0 2%;
+    width: auto;
+    height: 100%;
+}
+
+section#process .right img {
+    width: 100%;
+}
+
+
+/* refleksion */
+
+section#refleksion {
+    width: 100vw;
+    height: 100vw;
+}
+
+section#refleksion .sectionwrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#refleksion .column_left {
+    width: 100%;
+    height: 100%;
+    flex-basis: 400px;
+    flex-grow: 0.5;
+    padding: 0 2% 0 30%;
+}
+
+section#refleksion .column_left p {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+
+}
+
+section#refleksion .column_right {
+    width: 100%;
+    height: 100%;
+    flex-basis: 400px;
+    flex-grow: 0.5;
+    padding: 0 30% 2% 4%;
+}
+
+section#refleksion .column_right img {
+    width: 100%;
+}
+
+
+/* produkt */
+
+section#produkt {
+    width: 100vw;
+    height: auto;
+}
+
+section#produkt .sectionwrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+
+section#produkt .row {
+    width: 100%;
+    height: 100%;
+}
+
+section#produkt .row {
+    text-align: center;
+}
+
+section#produkt .row img {
+    width: 50%;
+    height: auto;
+}
+
+
+
+
+/* --------- NOAHS UVENTEDE MØDE ---------- */
+
+/* opgaven */
+
+#noahs_uventede_moede section#process .top img {
+    height: 100%;
+    width: auto;
+    padding: 3% 4%;
+    float: right;
+}
+
+
+#noahs_uventede_moede section#process .row_top {
+    width: 100%;
+    height: auto;
+    padding: 0 20%;
+}
+
+#noahs_uventede_moede section#produkt .row a {
+    color: black;
+}
+
+/* --------- REPUBLIKKEN WAY ---------- */
+
+/* --------- PORTFOLI ---------- */
+
+section#portfolio {
+    width: 100vw;
+    height: 100vw;
+    padding: 10vw 10vw;
+}
+
+@media screen and (min-width: 375px) and (orientation: portrait) {
+    section#portfolio {
+        height: 133vw;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 627px) and (orientation: landscape) {
+    section#portfolio {
+        height: 59vw;
+    }
+}
+
+@media screen and (min-width: 628px) and (max-width: 1024px) and (orientation: landscape) {
+    section#portfolio {
+        height: 75vw;
+    }
+}
+
+@media screen and (min-width: 1025px) and (orientation: landscape) {
+    section#portfolio {
+        height: 56vw;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1025px),
+screen and (min-resolution: 192dpi) and (min-width: 1025px) {
+    section#portfolio {
+        height: 56vw;
+    }
+}
+
+section#portfolio .sectionwrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section#portfolio .column {
+    width: 100%;
+    height: auto;
+    flex-basis: 600px;
+    flex-grow: 1;
+}
+
+section#portfolio .column_top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#portfolio .column_bottom {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#portfolio .content_left {
+    width: 100%;
+    height: 50%;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+section#portfolio .content_right {
+    width: 100%;
+    height: 50%;
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+section#portfolio .content_left img {
+    width: 100%;
+    height: auto;
+    padding: 15%;
+}
+
+section#portfolio .content_right img {
+    width: 100%;
+    height: auto;
+    padding: 15%;
+}
+
+
+
+
+
+/* --------- FOOTER ---------- */
+
+.contact {
+    padding: 5%;
+    text-align: center;
+}
+
+.contact a {
+    color: black;
+    font-family: HelveticaNeue-Light, sans-serif;
+    font-size: 0.9em;
+}
+
+
+/* --------- TEST ---------- */

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noahs uventede møde</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- tilføjet for favicon: start -->
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <!-- tilføjet for favicon: slut -->
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body id="noahs_uventede_moede">
+
+    <header>
+        <nav>
+            <div id="wrapper">
+                <div class="nav_button">
+                    <a href="index.html">forside</a>
+                </div>
+                <div class="nav_button">
+                    <a href="udvalgte_vaerker.html">udvalgte værker</a>
+                </div>
+                <div class="nav_button">
+                    <a href="portfolio.html">portfoilo</a>
+                </div>
+                <div class="nav_button">
+                    <a href="om.html">om</a>
+                </div>
+            </div>
+            <div class="projekt_nav">
+                <div><a href="#opgaven">opgaven</a></div>
+                <div><a href="#process">process</a></div>
+                <div><a href="#refleksion">refleksion</a></div>
+                <div><a href="#produkt">produkt</a></div>
+            </div>
+        </nav>
+
+    </header>
+    <section id="opgaven">
+        <div class="sectionwrapper">
+            <div class="content">
+                <h2>animationstema</h2>
+                <p>Hvordan definerer man en animation? <em>Teknik til at få dukker, tegnede figurer eller computergrafik til at bevæge sig livagtigt, fx på film eller på en skærm.</em> Således beskriver ordbogen.com en animation. I dette skal vi altså konstruere utallige billeder i Illustrator og sammensættes i Brackets. Det færdige produkt skal udgøre et dilemmaspil, som tager sig form af en animation. Til opgaven er der fastlagt en fast struktur, som skal følges.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="process">
+        <div id="beskrivelse">
+            <div class="sectionwrapper">
+                <div class="column">
+                    <div class="column_content_left">
+                        <div class="top">
+                            <img src="filer/noah_vector.png" alt="Noah i vector">
+                        </div>
+                        <div class="bottom">
+                            <img src="filer/noah_skitse.png" alt="Noah skitse">
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="column_content_right">
+                        <div class="content">
+                            <p>For at finde en spændende vinkel, påbegynder jeg min process med at finde en spændende vinkel på den historie jeg vil lave. En brainstorm er god til at bevæge sig ud fra temaer, som ligger lige for. Det leder mig frem til tematikken om ulve i Danmark. Hvad gør man, hvis man en dag møder en ulv? ulvetracking.dk viser sig at have svaret, så jeg vælger at formidle informationerne visuelt via animationen. Flowchartet udfyldes med de valg man ville foretage. Derefter kan jeg starte på mit sekvensdiagram, som er den rækkefølge min jquery skal følge.</p>
+                            <p>Når historien klarlægges, skal karakterenes baggrund defineres. 'Bange Noah' og en tilfældig ulv bliver karakterene i min historie. Adskillige skister på deres udseende bliver efterfulgt af et styletile, som skaber helheden for det univers jeg vil skabe. Med teori om de 12 animationsprincipper i baghovedet, påbegynder jeg mit spritesheet til mine walkcycles. I Javascript kan jeg via jquery starte og slukke for animationerne, og i CSS definerer jeg selv, hvilke sprites, som vises og hvor de skal bevæge sig hen.</p>
+                            <p>Nedestående pdf'er viser en mere detaljeret process fra forløbet</p>
+                            <a href="filer/pdf/02_01_01_Idegrundlag_MikeHansen.pdf" target="_blank" alt="Idegrundlag">
+                                <p><strong>Se pdf om idébeskrivelse</strong></p>
+                            </a>
+                            <a href="filer/pdf/02.01.02_Karakterdesign_MikeHansen.pdf" target="_blank" alt="Karakterdesign">
+                                <p><strong>Se pdf om karakterdesign</strong></p>
+                            </a>
+                            <a href="filer/pdf/02.01.03_Rentegnet%20grafik_MikeHansen.pdf" target="_blank" alt="Rentegnet">
+                                <p><strong>Se pdf om rentegningerne</strong></p>
+                            </a>
+                            <a href="filer/pdf/02_03_04_Endelig_aflevering_MikeHansen.pdf" target="_blank" alt="Karakterdesign">
+                                <p><strong>Se pdf om flowchart og sekvensdiagram</strong></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="billeder">
+            <div class="sectionwrapper">
+                <div class="row_top">
+                    <img src="filer/noah_javascript.png" alt="Noah javascript">
+                </div>
+                <div class="row_bottom">
+                    <div class="row_content">
+                        <div class="left">
+                            <img src="filer/noah_spritesheet.png" alt="Noah spritesheet">
+                        </div>
+                        <div class="right">
+                            <img src="filer/noah_scenen.png" alt="Noah scenen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="refleksion">
+        <div class="sectionwrapper">
+            <div class="column_left">
+                <p>Forløbet har lært mig kompleksiteten af animationer, men også mulighederne med Javascript. Redskaberne, flowchart og sekvensdiagrammet, har været en enorm guideline til den efterfølgende implementering.</p>
+                <p>Endvidere synes jeg at jeg har formået, at lave det univers, som jeg havde forstillet mig, med udgangspunkt i de oplæg, som har været præsenteret. Jeg ville gerne skabe et univers, som har det lidt barnlige og overdrevet udtryk i animationerne. Stemningen er realistisk med et snært af det mørke, for at synliggøre dilemmaet i at møde sin frygt.</p>
+                <p>Det har været sjovt at arbejde med rummet i baggrunden, og se hvor meget indeflydelse, det har på det endelige resultat.
+                </p>
+            </div>
+            <div class="column_right">
+                <img src="filer/noah_normal.svg" alt="Noah sprite">
+            </div>
+        </div>
+    </section>
+
+    <section id="produkt">
+        <div class="sectionwrapper">
+            <div class="row">
+                <a href="http://mikeparayno.dk/kea/02-animation/020304/" target="_blank" alt="Noahs uventede møde"><img src="filer/noah_titelbillede.png" alt="Spil Noahs uventede møde"></a>
+            </div>
+            <div class="row">
+                <a href="http://mikeparayno.dk/kea/02-animation/020304/" target="_blank" alt="Noahs uventede møde">
+                    <p>Prøv dilemmaspillet 'Noahs uventede møde'</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contact">
+            <p>Mike Parayno Hansen | <a href="mike0789@stud.kea.dk"><strong>mike0789@stud.kea.dk</strong></a></p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="action.js"></script>
+</body>
+
+</html>
